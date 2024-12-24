@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>SQL2012AdSalesDev</DataSourceReference>
+      <CommandText>SELECT AdProjects.AdProjId, AdProjects.AdProjNm, Publications.PublctnNm, Publications.Address1
+FROM   AdProjects INNER JOIN
+             Publications ON AdProjects.PublctnId = Publications.PublctnId
+ORDER BY AdProjects.AdProjNm</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="AdProjId">
+        <DataField>AdProjId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AdProjNm">
+        <DataField>AdProjNm</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PublctnNm">
+        <DataField>PublctnNm</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Address1">
+        <DataField>Address1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
