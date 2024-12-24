@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>dsAdSalesDev</DataSourceReference>
+      <CommandText>SELECT        AdProjId, AdProjNm, AdProjStatId, CompanyId, AdProjCatId, PublctnId, PublctnNm, PublctnAddrId, PublctnAddrCntNm, Address1, Address2, City, State, PostalCd
+FROM            AdProjects</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="AdProjId">
+        <DataField>AdProjId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AdProjNm">
+        <DataField>AdProjNm</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AdProjStatId">
+        <DataField>AdProjStatId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CompanyId">
+        <DataField>CompanyId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AdProjCatId">
+        <DataField>AdProjCatId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PublctnId">
+        <DataField>PublctnId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PublctnNm">
+        <DataField>PublctnNm</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PublctnAddrId">
+        <DataField>PublctnAddrId</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PublctnAddrCntNm">
+        <DataField>PublctnAddrCntNm</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Address1">
+        <DataField>Address1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Address2">
+        <DataField>Address2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="City">
+        <DataField>City</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="State">
+        <DataField>State</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PostalCd">
+        <DataField>PostalCd</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
